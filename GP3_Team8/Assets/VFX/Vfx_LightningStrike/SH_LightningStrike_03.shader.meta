@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: a39a0ed8ac238594fbf61ecb332ca53d
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _SH_LightningStrike_03: {fileID: 2800000, guid: c31da365764aca84d991f2702a3addc4,
+      type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

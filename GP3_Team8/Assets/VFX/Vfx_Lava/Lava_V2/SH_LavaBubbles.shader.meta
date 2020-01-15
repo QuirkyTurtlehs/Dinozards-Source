@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: c0e926703f0af944bbde796a5bb0079a
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _LavaNoise2: {fileID: 2800000, guid: 47f1e25344983eb4a852e2ae7bb3cc01, type: 3}
+  - _LavaNoise1: {fileID: 2800000, guid: 47f1e25344983eb4a852e2ae7bb3cc01, type: 3}
+  - _LavaNoise3: {fileID: 2800000, guid: 47f1e25344983eb4a852e2ae7bb3cc01, type: 3}
+  - _TextureSample0: {fileID: 2800000, guid: 47f1e25344983eb4a852e2ae7bb3cc01, type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

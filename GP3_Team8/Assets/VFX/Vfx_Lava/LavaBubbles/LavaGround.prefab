@@ -1,0 +1,943 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4807992824562949817
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4807992824562949816}
+  - component: {fileID: 4807992824562949823}
+  m_Layer: 0
+  m_Name: LavaGround
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4807992824562949816
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992824562949817}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -10, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4807992824712855582}
+  - {fileID: 7416937353916346615}
+  - {fileID: 4807992825537776428}
+  - {fileID: 4807992824993303849}
+  - {fileID: 4807992825854235464}
+  - {fileID: 4807992825427751403}
+  - {fileID: 4807992826491631512}
+  - {fileID: 4807992826590537795}
+  - {fileID: 4807992825054785411}
+  - {fileID: 4807992825095673851}
+  - {fileID: 4807992824868415118}
+  - {fileID: 4807992825318928439}
+  - {fileID: 4807992824684984656}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4807992824562949823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992824562949817}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff6ad95c48442eb4c9b6531c6f7f7b3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player1: {fileID: 0}
+  Player2: {fileID: 0}
+  Player3: {fileID: 0}
+  Player4: {fileID: 0}
+  Planks: {fileID: 0}
+  lavaYPositionToRaiseItTo: -2
+  lavaRaiseDuration: 5
+  cameraShakeDuration: 5
+  cameraShakeIntensity: 0.0125
+  vibrationIntenstiy: 0.25
+  planksYPositionToLowerItTo: -5
+  planksLowerDuration: 2
+--- !u!1 &4807992824684984657
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4807992824684984656}
+  - component: {fileID: 4807992824684984661}
+  - component: {fileID: 4807992824684984662}
+  - component: {fileID: 4807992824684984663}
+  m_Layer: 0
+  m_Name: LavaGround (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4807992824684984656
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992824684984657}
+  m_LocalRotation: {x: -0, y: 0.9996699, z: -0, w: 0.025692433}
+  m_LocalPosition: {x: 3.1299999, y: -4.49, z: 7.09}
+  m_LocalScale: {x: 42.8778, y: 1.9551665, z: 42.8778}
+  m_Children: []
+  m_Father: {fileID: 4807992824562949816}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 177.05602, z: 0}
+--- !u!33 &4807992824684984661
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992824684984657}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &4807992824684984662
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992824684984657}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 6950680661c050748a85023cf6d4354f, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &4807992824684984663
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992824684984657}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &4807992824712855583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4807992824712855582}
+  - component: {fileID: 4807992824712855571}
+  - component: {fileID: 4807992824712855580}
+  - component: {fileID: 4807992824712855581}
+  m_Layer: 0
+  m_Name: LavaGround
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4807992824712855582
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992824712855583}
+  m_LocalRotation: {x: -0, y: 0.96914446, z: -0, w: 0.24649331}
+  m_LocalPosition: {x: 4.51, y: 1.3, z: 0.98}
+  m_LocalScale: {x: 21, y: 0.95757, z: 21}
+  m_Children: []
+  m_Father: {fileID: 4807992824562949816}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 151.46, z: 0}
+--- !u!33 &4807992824712855571
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992824712855583}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &4807992824712855580
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992824712855583}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 187908482a600f3439aaad840d1ff14b, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &4807992824712855581
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992824712855583}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &4807992824868415119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4807992824868415118}
+  - component: {fileID: 4807992824868415116}
+  - component: {fileID: 4807992824868415117}
+  m_Layer: 0
+  m_Name: LavaDamageArea (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4807992824868415118
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992824868415119}
+  m_LocalRotation: {x: -0, y: 0.9835417, z: -0, w: -0.18068105}
+  m_LocalPosition: {x: 7.1218243, y: 1.68, z: 6.4027815}
+  m_LocalScale: {x: 0.40377146, y: 1, z: 0.34221622}
+  m_Children: []
+  m_Father: {fileID: 4807992824562949816}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 357.615, z: 0}
+--- !u!64 &4807992824868415116
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992824868415119}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: ac0ebd54c47381c439b4be768434fda8, type: 3}
+--- !u!114 &4807992824868415117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992824868415119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb03e87024334aa498498201209e36e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10
+  decreasedSpeed: 2
+--- !u!1 &4807992824993303851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4807992824993303849}
+  - component: {fileID: 4807992824993303850}
+  - component: {fileID: 4807992824993303848}
+  m_Layer: 0
+  m_Name: LavaDamageArea (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4807992824993303849
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992824993303851}
+  m_LocalRotation: {x: -0, y: 0.65665734, z: -0, w: 0.7541891}
+  m_LocalPosition: {x: -0.03347397, y: 1.6799998, z: 5.688272}
+  m_LocalScale: {x: 0.24941286, y: 1, z: 0.47511667}
+  m_Children: []
+  m_Father: {fileID: 4807992824562949816}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 238.887, z: 0}
+--- !u!64 &4807992824993303850
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992824993303851}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: ac0ebd54c47381c439b4be768434fda8, type: 3}
+--- !u!114 &4807992824993303848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992824993303851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb03e87024334aa498498201209e36e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10
+  decreasedSpeed: 2
+--- !u!1 &4807992825054785420
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4807992825054785411}
+  - component: {fileID: 4807992825054785409}
+  - component: {fileID: 4807992825054785410}
+  m_Layer: 0
+  m_Name: LavaDamageArea (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4807992825054785411
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992825054785420}
+  m_LocalRotation: {x: -0, y: 0.9723351, z: -0, w: 0.23359047}
+  m_LocalPosition: {x: 1.8050057, y: 1.6799998, z: 5.717848}
+  m_LocalScale: {x: 0.17396982, y: 1, z: 0.13557607}
+  m_Children: []
+  m_Father: {fileID: 4807992824562949816}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 309.779, z: 0}
+--- !u!64 &4807992825054785409
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992825054785420}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: ac0ebd54c47381c439b4be768434fda8, type: 3}
+--- !u!114 &4807992825054785410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992825054785420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb03e87024334aa498498201209e36e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10
+  decreasedSpeed: 2
+--- !u!1 &4807992825095673828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4807992825095673851}
+  - component: {fileID: 4807992825095673849}
+  - component: {fileID: 4807992825095673850}
+  m_Layer: 0
+  m_Name: LavaDamageArea (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4807992825095673851
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992825095673828}
+  m_LocalRotation: {x: -0, y: 0.9962507, z: -0, w: -0.086513266}
+  m_LocalPosition: {x: 4.392825, y: 1.6799998, z: 7.67903}
+  m_LocalScale: {x: 0.21679169, y: 1, z: 0.1878741}
+  m_Children: []
+  m_Father: {fileID: 4807992824562949816}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 346.722, z: 0}
+--- !u!64 &4807992825095673849
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992825095673828}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: ac0ebd54c47381c439b4be768434fda8, type: 3}
+--- !u!114 &4807992825095673850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992825095673828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb03e87024334aa498498201209e36e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10
+  decreasedSpeed: 2
+--- !u!1 &4807992825318928432
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4807992825318928439}
+  - component: {fileID: 4807992825318928437}
+  - component: {fileID: 4807992825318928438}
+  m_Layer: 0
+  m_Name: LavaDamageArea (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4807992825318928439
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992825318928432}
+  m_LocalRotation: {x: -0, y: -0.15449287, z: -0, w: -0.98799396}
+  m_LocalPosition: {x: 8.644516, y: 1.6799998, z: 6.0733595}
+  m_LocalScale: {x: 0.26402584, y: 1, z: -0.4224082}
+  m_Children: []
+  m_Father: {fileID: 4807992824562949816}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 534.57104, z: 0}
+--- !u!64 &4807992825318928437
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992825318928432}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: ac0ebd54c47381c439b4be768434fda8, type: 3}
+--- !u!114 &4807992825318928438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992825318928432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb03e87024334aa498498201209e36e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10
+  decreasedSpeed: 2
+--- !u!1 &4807992825427742229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4807992825427751403}
+  - component: {fileID: 4807992825427742228}
+  - component: {fileID: 4807992825427751402}
+  m_Layer: 0
+  m_Name: LavaDamageArea (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4807992825427751403
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992825427742229}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 12.092308, y: 1.6799998, z: -0.392149}
+  m_LocalScale: {x: 1.0007387, y: 1, z: 1.0007386}
+  m_Children: []
+  m_Father: {fileID: 4807992824562949816}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!64 &4807992825427742228
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992825427742229}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 79e267dca3b7a0e4fb0b8a24aa9b73de, type: 3}
+--- !u!114 &4807992825427751402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992825427742229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb03e87024334aa498498201209e36e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10
+  decreasedSpeed: 2
+--- !u!1 &4807992825537776429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4807992825537776428}
+  - component: {fileID: 4807992825537776419}
+  - component: {fileID: 4807992825537776417}
+  m_Layer: 0
+  m_Name: LavaDamageArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4807992825537776428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992825537776429}
+  m_LocalRotation: {x: -0, y: 0.99960613, z: -0, w: -0.028063223}
+  m_LocalPosition: {x: 4.74, y: 1.68, z: 0.25999972}
+  m_LocalScale: {x: 1.000581, y: 1, z: 1.0005808}
+  m_Children: []
+  m_Father: {fileID: 4807992824562949816}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 183.21599, z: 0}
+--- !u!64 &4807992825537776419
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992825537776429}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: e77a74a15733a174ab6b38321d79d03a, type: 3}
+--- !u!114 &4807992825537776417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992825537776429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb03e87024334aa498498201209e36e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10
+  decreasedSpeed: 2
+--- !u!1 &4807992825854235465
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4807992825854235464}
+  - component: {fileID: 4807992825854235470}
+  - component: {fileID: 4807992825854235471}
+  m_Layer: 0
+  m_Name: LavaDamageArea (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4807992825854235464
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992825854235465}
+  m_LocalRotation: {x: -0, y: 0.9938318, z: -0, w: 0.110898174}
+  m_LocalPosition: {x: 2.7151685, y: 1.68, z: 6.943899}
+  m_LocalScale: {x: 0.4049914, y: 1, z: 0.46150732}
+  m_Children: []
+  m_Father: {fileID: 4807992824562949816}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 324.062, z: 0}
+--- !u!64 &4807992825854235470
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992825854235465}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: ac0ebd54c47381c439b4be768434fda8, type: 3}
+--- !u!114 &4807992825854235471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992825854235465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb03e87024334aa498498201209e36e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10
+  decreasedSpeed: 2
+--- !u!1 &4807992826491631514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4807992826491631512}
+  - component: {fileID: 4807992826491631513}
+  - component: {fileID: 4807992826491631519}
+  m_Layer: 0
+  m_Name: LavaDamageArea (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4807992826491631512
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992826491631514}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 6.91413, y: 1.6799998, z: -7.252529}
+  m_LocalScale: {x: 1.0007387, y: 1, z: 1.0007386}
+  m_Children: []
+  m_Father: {fileID: 4807992824562949816}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!64 &4807992826491631513
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992826491631514}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 276e81fb544d1844eb2bafe7a35a493e, type: 3}
+--- !u!114 &4807992826491631519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992826491631514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb03e87024334aa498498201209e36e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10
+  decreasedSpeed: 2
+--- !u!1 &4807992826590537805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4807992826590537795}
+  - component: {fileID: 4807992826590537804}
+  - component: {fileID: 4807992826590537794}
+  m_Layer: 0
+  m_Name: LavaDamageArea (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4807992826590537795
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992826590537805}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: -2.0039947, y: 1.850448, z: -2.469983}
+  m_LocalScale: {x: 1.0007387, y: 1, z: 1.0007386}
+  m_Children: []
+  m_Father: {fileID: 4807992824562949816}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!64 &4807992826590537804
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992826590537805}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: c5f195baec47f94488c7b402156d3a18, type: 3}
+--- !u!114 &4807992826590537794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807992826590537805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb03e87024334aa498498201209e36e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10
+  decreasedSpeed: 2
+--- !u!1001 &4807992825149684722
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4807992824562949816}
+    m_Modifications:
+    - target: {fileID: 5351637637540815128, guid: 9bfb695ca11929148af2ac5521fc590b,
+        type: 3}
+      propertyPath: m_Name
+      value: FX_LavaBubble_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618611436077583109, guid: 9bfb695ca11929148af2ac5521fc590b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618611436077583109, guid: 9bfb695ca11929148af2ac5521fc590b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.8199997
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618611436077583109, guid: 9bfb695ca11929148af2ac5521fc590b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618611436077583109, guid: 9bfb695ca11929148af2ac5521fc590b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618611436077583109, guid: 9bfb695ca11929148af2ac5521fc590b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9999364
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618611436077583109, guid: 9bfb695ca11929148af2ac5521fc590b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618611436077583109, guid: 9bfb695ca11929148af2ac5521fc590b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.01128067
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618611436077583109, guid: 9bfb695ca11929148af2ac5521fc590b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618611436077583109, guid: 9bfb695ca11929148af2ac5521fc590b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618611436077583109, guid: 9bfb695ca11929148af2ac5521fc590b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 181.29298
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618611436077583109, guid: 9bfb695ca11929148af2ac5521fc590b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203546383773892130, guid: 9bfb695ca11929148af2ac5521fc590b,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985248516456853640, guid: 9bfb695ca11929148af2ac5521fc590b,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985248516456853640, guid: 9bfb695ca11929148af2ac5521fc590b,
+        type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5249857543666588272, guid: 9bfb695ca11929148af2ac5521fc590b, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 9bfb695ca11929148af2ac5521fc590b, type: 3}
+--- !u!4 &7416937353916346615 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2618611436077583109, guid: 9bfb695ca11929148af2ac5521fc590b,
+    type: 3}
+  m_PrefabInstance: {fileID: 4807992825149684722}
+  m_PrefabAsset: {fileID: 0}

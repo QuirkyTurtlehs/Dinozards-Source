@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: fcf63387326fc8a44846ef07aa87ccc7
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _TreeLeavesSingle01: {fileID: 2800000, guid: e5c852699b77ff84aab35b0db09b4f40,
+      type: 3}
+  - _TreeLeavesSingle01_Opacity: {fileID: 2800000, guid: 312492f0566921d4aa09b3d8255902ac,
+      type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
